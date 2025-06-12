@@ -52,7 +52,7 @@ Evaluated on multiple performance metrics:
 
 The **fine-tuned VGG16** model outperformed all others and showed the best generalization capacity.
 
-## 📊 Results
+## Results
 
 | Model                              | Accuracy | AUC Score | Observations                              |
 |-----------------------------------|----------|-----------|-------------------------------------------|
