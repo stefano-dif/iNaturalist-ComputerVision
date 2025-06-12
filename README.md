@@ -2,7 +2,7 @@
 
 A deep learning project for image classification on a subset of the [iNaturalist dataset](https://www.inaturalist.org/), developed as part of the *Deep Learning for Computer Vision* course.
 
-## 🧠 Project Overview
+## Project Overview
 
 This project tackles the problem of multi-class classification of animal and plant species from images. The focus is on building and comparing different CNN architectures, both from scratch and using transfer learning with VGG16, on a curated subset of the iNaturalist dataset.
 
@@ -13,7 +13,7 @@ Key goals:
 - Leverage transfer learning with VGG16 (feature extraction and fine-tuning)
 - Evaluate models using accuracy, loss, AUC, and Precision-Recall metrics
 
-## 📁 Repository Structure
+## Repository Structure
 
 iNaturalist-ComputerVision/
 - iNaturalist_DLCV.ipynb # Main Jupyter notebook with code and experiments
@@ -21,7 +21,7 @@ iNaturalist-ComputerVision/
 - iNaturalist_DLCV_slides.pptx # Presentation slides summarizing the project
 - requirements.txt # List of Python dependencies
 
-## 🧪 Dataset
+## Dataset
 
 A subset of the iNaturalist dataset was used:
 - Only RGB images (discarded CMYK and L modes)
@@ -29,7 +29,7 @@ A subset of the iNaturalist dataset was used:
 - 100 most frequent categories (from 1003) selected to reduce class imbalance
 - Total: ~58,000 images split into train (60%), validation (20%), and test (20%)
 
-## 🛠️ Models
+## Models
 
 ### 1. **From Scratch CNNs**
 - Simple 2-layer CNN: ~600k parameters, early overfitting, ~11% accuracy
@@ -41,7 +41,7 @@ A subset of the iNaturalist dataset was used:
 - **Feature Extraction + Data Augmentation**: ~26% accuracy with better generalization
 - **Fine-Tuning (last 4 conv layers + classifier)**: Best model with **37% validation accuracy**, balanced performance across all metrics
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 Evaluated on multiple performance metrics:
 - **Top-1 Accuracy**
@@ -62,14 +62,8 @@ The **fine-tuned VGG16** model outperformed all others and showed the best gener
 | VGG16 + Data Augmentation         | ~26%     | Medium    | Better generalization, lower loss         |
 | VGG16 Fine-Tuned (Best)           | **37%**  | **High**  | Best overall model                        |
 
-## 📎 Files
 
-- 📓 [iNaturalist_DLCV.ipynb](./iNaturalist_DLCV.ipynb): Full code, modeling, and evaluation.
-- 📄 [iNaturalist_DLCV_report.pdf](./iNaturalist_DLCV_report.pdf): Detailed write-up with methodology and analysis.
-- 📽️ [iNaturalist_DLCV_slides.pptx](./iNaturalist_DLCV_slides.pptx): Summary slides for presentation.
-- 📦 [requirements.txt](./requirements.txt): Required Python packages.
-
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repo:
    ```bash
@@ -88,7 +82,7 @@ The **fine-tuned VGG16** model outperformed all others and showed the best gener
 5. Run the notebook: 
 Open `iNaturalist_DLCV.ipynb` in Jupyter and execute the cells.
 
-## 📚 Acknowledgments
+## Acknowledgments
 
 Dataset: iNaturalist
 
